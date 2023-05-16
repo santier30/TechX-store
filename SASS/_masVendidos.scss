@@ -1,0 +1,79 @@
+body{
+    background-color: $primary-color;
+    padding-top:62px ;
+    color: #fff
+}
+.games{
+    #{&}_title{
+        background-color: $dark-primary-color;
+        color: #fff;
+        font-size: 2rem;
+        text-align: center;
+        width: 90%;
+        margin: 2rem auto;
+        padding: 1.2rem ;
+        border-right:4px solid #fff; 
+        border-left:4px solid #fff; 
+    };
+    #{&}_games{
+        display: grid;
+        padding: 1rem;
+        background-color: $dark-primary-color;
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 2rem auto;
+        border-radius: .5rem;
+        gap: 2.5rem;
+
+    };
+    #{&}_games_title{
+        padding: .8rem;
+        }
+    #{&}_game{
+        width: 98%;
+        margin: 0 auto;
+        background-color: #fff;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: .5rem;
+        
+        img{
+            width: 98%;
+            margin: 0 0 1rem 0;
+        }
+        h3{
+            
+            margin: 1rem 0;
+            border-bottom: dotted 3px $primary-color;
+            width: 98%;
+            text-align: end;
+            color: $dark-primary-color;
+            
+        }
+        p{
+            align-self: flex-start;
+        }
+        a{
+            color: #fff;
+            background-color: $tertiary-color;
+            padding: 1rem;
+            border-radius: .7rem;
+            margin: 1rem 0;
+            &:hover{
+                background-color: $primary-color;
+            }
+        }
+    };
+    
+}
+.footer{
+    margin: 1rem auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: $light-primary-color;
+    border-radius: .7rem;
+}
